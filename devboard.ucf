@@ -1,0 +1,12 @@
+#  Avnet Spartan-6 LX16 Evaluation Board
+Net scl LOC=R3 | IOSTANDARD = LVCMOS33;
+Net sda LOC=T3 | IOSTANDARD = LVCMOS33;
+
+Net clk TNM_NET = sys_clk_pin;
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 24 MHz;
+Net clk TNM_NET = sys_clk_pin  |  LOC=K15 | IOSTANDARD = LVCMOS33;
+
+Net reset TIG;
+Net reset LOC=H18 | IOSTANDARD = LVCMOS33;
+
+CONFIG VCCAUX = "3.3" ;
